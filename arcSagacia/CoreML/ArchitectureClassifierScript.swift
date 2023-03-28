@@ -12,7 +12,7 @@ import CoreImage
 struct ArchitectureClassifierScript {
     static let configuration = MLModelConfiguration()
     static let model = try! VNCoreMLModel(for: ArchitectureClassifier(configuration: configuration).model)
-    static let class_names = ["barroco", "ind", "modernista", "neoclassica", "neogotico"]
+    static let class_names = ["Barroco", "Indígena", "Modernista", "Neoclassica", "Neogotico"]
     
     static func detect(ciImage: CIImage) -> String? {
         var label = ""
