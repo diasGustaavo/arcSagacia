@@ -16,9 +16,11 @@ struct Homeview: View {
             
             if photoModel.imageIsValid {
                 Image(uiImage: photoModel.images[0])
+                    .resizable()
+                    .frame(height: 300)
+                
+                Text("This is a \(photoModel.imageClass) building 🏛️")
             }
-            
-            Text("This is a Neogothic building 🏛️")
                 
             PickMediaView(viewModel: photoModel)
         }
