@@ -19,7 +19,7 @@
 		B4429EA129D20EBA00974612 /* Homeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4429EA029D20EBA00974612 /* Homeview.swift */; };
 		B4429EA329D20EBB00974612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4429EA229D20EBB00974612 /* Assets.xcassets */; };
 		B4429EA629D20EBB00974612 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4429EA529D20EBB00974612 /* Preview Assets.xcassets */; };
-		B4429EB129D2100E00974612 /* ArchitectureClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B4429EB029D2100E00974612 /* ArchitectureClassifier.mlmodel */; };
+		B48A76D629D46EA6001BC0EA /* ArchitectureClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B48A76D529D46EA6001BC0EA /* ArchitectureClassifier.mlmodel */; };
 		B4DBD7FB29D21F0C0080AA59 /* ArchitectureClassifierScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DBD7FA29D21F0C0080AA59 /* ArchitectureClassifierScript.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,8 @@
 		B4429EA029D20EBA00974612 /* Homeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeview.swift; sourceTree = "<group>"; };
 		B4429EA229D20EBB00974612 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4429EA529D20EBB00974612 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B4429EB029D2100E00974612 /* ArchitectureClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ArchitectureClassifier.mlmodel; sourceTree = "<group>"; };
+		B48A76D529D46EA6001BC0EA /* ArchitectureClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ArchitectureClassifier.mlmodel; sourceTree = "<group>"; };
+		B48A76D729D47108001BC0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B4DBD7FA29D21F0C0080AA59 /* ArchitectureClassifierScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureClassifierScript.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +123,7 @@
 		B4429E9D29D20EBA00974612 /* arcSagacia */ = {
 			isa = PBXGroup;
 			children = (
+				B48A76D729D47108001BC0EA /* Info.plist */,
 				B42F66F229D213EF00D39CA6 /* Core */,
 				B4429E9E29D20EBA00974612 /* arcSagaciaApp.swift */,
 				B4429EAD29D20FAA00974612 /* CoreML */,
@@ -155,7 +157,7 @@
 				B42F66F829D21E0100D39CA6 /* export_as_mlmodel.ipynb */,
 				B42F66F929D21E0100D39CA6 /* lime-tests.ipynb */,
 				B42F66FA29D21E0100D39CA6 /* VGG16_based_model.ipynb */,
-				B4429EB029D2100E00974612 /* ArchitectureClassifier.mlmodel */,
+				B48A76D529D46EA6001BC0EA /* ArchitectureClassifier.mlmodel */,
 				B4DBD7FA29D21F0C0080AA59 /* ArchitectureClassifierScript.swift */,
 			);
 			path = CoreML;
@@ -242,7 +244,7 @@
 				B42F66EF29D213A500D39CA6 /* PhotoPickerRepresentable.swift in Sources */,
 				B42F66F729D214E600D39CA6 /* Color.swift in Sources */,
 				B4429E9F29D20EBA00974612 /* arcSagaciaApp.swift in Sources */,
-				B4429EB129D2100E00974612 /* ArchitectureClassifier.mlmodel in Sources */,
+				B48A76D629D46EA6001BC0EA /* ArchitectureClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,11 +376,12 @@
 				DEVELOPMENT_TEAM = 9YRW6AKFZ7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = arcSagacia/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos of the buildings.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to your photo library to take photos of the buildings.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -405,11 +408,12 @@
 				DEVELOPMENT_TEAM = 9YRW6AKFZ7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = arcSagacia/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos of the buildings.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to your photo library to take photos of the buildings.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
