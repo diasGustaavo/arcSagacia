@@ -46,7 +46,7 @@ struct PickMediaView: View {
         }
         .padding(.horizontal)
         .background(Color.theme.foregroundColor)
-        .foregroundColor(Color.theme.accentTextColor)
+        .foregroundColor(.white)
         .cornerRadius(20)
         // CAMERA VIEW
         .sheet(isPresented: $showCamera, onDismiss: {

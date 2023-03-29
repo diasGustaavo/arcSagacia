@@ -22,21 +22,39 @@ struct Homeview: View {
                     .padding(.horizontal)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .background(Color.theme.foregroundColor)
-                    .foregroundColor(Color.theme.accentTextColor)
+                    .foregroundColor(.white)
                 
                 if photoModel.imageIsValid {
                     ScrollView {
                         Image(uiImage: photoModel.images[0])
                             .resizable()
                             .frame(height: 300)
-                        
+
                         Text("\(photoModel.imageClass)")
                             .font(.system(size: 35, weight: .bold))
                             .padding(.top)
                             .frame(maxWidth: .infinity, alignment: .center)
                             .foregroundColor(Color.theme.basicTextColor)
-                        
+
                         Text("\(photoModel.imageDescription)")
+                            .font(.system(size: 22, weight: .regular))
+                            .padding(.all)
+                            .frame(maxWidth: .infinity, alignment: .center)
+                            .foregroundColor(Color.theme.basicTextColor)
+                    }
+                } else {
+                    ScrollView {
+                        Image("copan")
+                            .resizable()
+                            .frame(height: 300)
+
+                        Text("Modernista")
+                            .font(.system(size: 35, weight: .bold))
+                            .padding(.top)
+                            .frame(maxWidth: .infinity, alignment: .center)
+                            .foregroundColor(Color.theme.basicTextColor)
+
+                        Text("\(photoModel.arcDescriptions[2])")
                             .font(.system(size: 22, weight: .regular))
                             .padding(.all)
                             .frame(maxWidth: .infinity, alignment: .center)

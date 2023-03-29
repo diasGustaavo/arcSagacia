@@ -14,7 +14,7 @@ struct ArchitectureClassifierScript {
     static let model = try! VNCoreMLModel(for: ArchitectureClassifier(configuration: configuration).model)
     static let class_names = ["Barroco", "Indígena", "Modernista", "Neoclassica", "Neogotico"]
     
-    static func detect(ciImage: CIImage) -> String? {
+    static func detect(ciImage: CIImage, completion: @escaping (String) -> Void) {
         var label = ""
         let handler = VNImageRequestHandler(ciImage: ciImage)
         let request = VNCoreMLRequest(model: model) { request, error in
@@ -25,7 +25,7 @@ struct ArchitectureClassifierScript {
                     let substrings = String(str[substringRange]).components(separatedBy: ",")
                     let subfloats = substrings.compactMap { Float($0) }
                     guard let highestNumIndex = subfloats.firstIndex(of: subfloats.max()!) else { return }
-                    label = class_names[highestNumIndex]
+                    completion(class_names[highestNumIndex])
                 } else {
                     print("DEBUG: Could not process results string")
                 }
@@ -39,7 +39,6 @@ struct ArchitectureClassifierScript {
         } catch {
             print("Error classifying image: \(error.localizedDescription)")
         }
-        return label
     }
     
 }

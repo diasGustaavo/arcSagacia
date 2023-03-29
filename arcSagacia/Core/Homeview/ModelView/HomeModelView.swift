@@ -21,14 +21,12 @@ import CoreImage
     
     func isImageValid() {
         if(!images.isEmpty) {
-            isLoading = true
-            imageIsValid = true
             guard let ciImage = CIImage(image: images[0]) else { return }
-            if let labelReceived = ArchitectureClassifierScript.detect(ciImage: ciImage) {
-                imageClass = labelReceived
-                isLoading = false
-                imageDescription = getClassDescription()
-            }
+            ArchitectureClassifierScript.detect(ciImage: ciImage, completion: { labelReceived in
+                self.imageClass = labelReceived
+                self.imageDescription = self.getClassDescription()
+                self.imageIsValid = true
+            })
         } else {
             imageIsValid = false
         }
