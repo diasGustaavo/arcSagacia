@@ -13,13 +13,13 @@
 		B42F66F129D213CA00D39CA6 /* ImagePickerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42F66F029D213C900D39CA6 /* ImagePickerRepresentable.swift */; };
 		B42F66F729D214E600D39CA6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42F66F629D214E600D39CA6 /* Color.swift */; };
 		B42F66FB29D21E0100D39CA6 /* export_as_mlmodel.ipynb in Resources */ = {isa = PBXBuildFile; fileRef = B42F66F829D21E0100D39CA6 /* export_as_mlmodel.ipynb */; };
-		B42F66FC29D21E0100D39CA6 /* lime-tests.ipynb in Resources */ = {isa = PBXBuildFile; fileRef = B42F66F929D21E0100D39CA6 /* lime-tests.ipynb */; };
-		B42F66FD29D21E0100D39CA6 /* VGG16_based_model.ipynb in Resources */ = {isa = PBXBuildFile; fileRef = B42F66FA29D21E0100D39CA6 /* VGG16_based_model.ipynb */; };
 		B4429E9F29D20EBA00974612 /* arcSagaciaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4429E9E29D20EBA00974612 /* arcSagaciaApp.swift */; };
 		B4429EA129D20EBA00974612 /* Homeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4429EA029D20EBA00974612 /* Homeview.swift */; };
 		B4429EA329D20EBB00974612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4429EA229D20EBB00974612 /* Assets.xcassets */; };
 		B4429EA629D20EBB00974612 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4429EA529D20EBB00974612 /* Preview Assets.xcassets */; };
 		B48A76D629D46EA6001BC0EA /* ArchitectureClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B48A76D529D46EA6001BC0EA /* ArchitectureClassifier.mlmodel */; };
+		B4A5B35829DC6F3700468FC1 /* lime-tests.ipynb in Resources */ = {isa = PBXBuildFile; fileRef = B4A5B35729DC6F3700468FC1 /* lime-tests.ipynb */; };
+		B4A5B35A29DC6FE800468FC1 /* VGG16_updated_model.ipynb in Resources */ = {isa = PBXBuildFile; fileRef = B4A5B35929DC6FE800468FC1 /* VGG16_updated_model.ipynb */; };
 		B4DBD7FB29D21F0C0080AA59 /* ArchitectureClassifierScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DBD7FA29D21F0C0080AA59 /* ArchitectureClassifierScript.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,8 +30,6 @@
 		B42F66F029D213C900D39CA6 /* ImagePickerRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerRepresentable.swift; sourceTree = "<group>"; };
 		B42F66F629D214E600D39CA6 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		B42F66F829D21E0100D39CA6 /* export_as_mlmodel.ipynb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = export_as_mlmodel.ipynb; sourceTree = "<group>"; };
-		B42F66F929D21E0100D39CA6 /* lime-tests.ipynb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lime-tests.ipynb"; sourceTree = "<group>"; };
-		B42F66FA29D21E0100D39CA6 /* VGG16_based_model.ipynb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VGG16_based_model.ipynb; sourceTree = "<group>"; };
 		B4429E9B29D20EBA00974612 /* arcSagacia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arcSagacia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4429E9E29D20EBA00974612 /* arcSagaciaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arcSagaciaApp.swift; sourceTree = "<group>"; };
 		B4429EA029D20EBA00974612 /* Homeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeview.swift; sourceTree = "<group>"; };
@@ -39,6 +37,8 @@
 		B4429EA529D20EBB00974612 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B48A76D529D46EA6001BC0EA /* ArchitectureClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ArchitectureClassifier.mlmodel; sourceTree = "<group>"; };
 		B48A76D729D47108001BC0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B4A5B35729DC6F3700468FC1 /* lime-tests.ipynb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lime-tests.ipynb"; sourceTree = "<group>"; };
+		B4A5B35929DC6FE800468FC1 /* VGG16_updated_model.ipynb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VGG16_updated_model.ipynb; sourceTree = "<group>"; };
 		B4DBD7FA29D21F0C0080AA59 /* ArchitectureClassifierScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureClassifierScript.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,8 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				B42F66F829D21E0100D39CA6 /* export_as_mlmodel.ipynb */,
-				B42F66F929D21E0100D39CA6 /* lime-tests.ipynb */,
-				B42F66FA29D21E0100D39CA6 /* VGG16_based_model.ipynb */,
+				B4A5B35729DC6F3700468FC1 /* lime-tests.ipynb */,
+				B4A5B35929DC6FE800468FC1 /* VGG16_updated_model.ipynb */,
 				B48A76D529D46EA6001BC0EA /* ArchitectureClassifier.mlmodel */,
 				B4DBD7FA29D21F0C0080AA59 /* ArchitectureClassifierScript.swift */,
 			);
@@ -221,11 +221,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A5B35A29DC6FE800468FC1 /* VGG16_updated_model.ipynb in Resources */,
 				B4429EA629D20EBB00974612 /* Preview Assets.xcassets in Resources */,
 				B4429EA329D20EBB00974612 /* Assets.xcassets in Resources */,
+				B4A5B35829DC6F3700468FC1 /* lime-tests.ipynb in Resources */,
 				B42F66FB29D21E0100D39CA6 /* export_as_mlmodel.ipynb in Resources */,
-				B42F66FD29D21E0100D39CA6 /* VGG16_based_model.ipynb in Resources */,
-				B42F66FC29D21E0100D39CA6 /* lime-tests.ipynb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
