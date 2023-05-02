@@ -11,11 +11,10 @@ import CoreImage
 
 struct ArchitectureClassifierScript {
     static let configuration = MLModelConfiguration()
-    static let model = try! VNCoreMLModel(for: ArchitectureClassifier(configuration: configuration).model)
+    static let model = try! VNCoreMLModel(for: abrilCFineTuning2(configuration: configuration).model)
     static let class_names = ["Barroco", "Indígena", "Modernista", "Neoclassica", "Neogotico"]
     
     static func detect(ciImage: CIImage, completion: @escaping (String) -> Void) {
-        var label = ""
         let handler = VNImageRequestHandler(ciImage: ciImage)
         let request = VNCoreMLRequest(model: model) { request, error in
             if let observations = request.results, !observations.isEmpty {
