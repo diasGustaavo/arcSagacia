@@ -28,9 +28,7 @@ struct Homeview: View {
                     VStack {
                         Spacer()
                         
-                        Text("⚙️🎞️")
-                            .font(.system(size: 40, weight: .semibold))
-                            .frame(maxWidth: .infinity, alignment: .center)
+                        Spinner(lineWidth: 5, height: 60, width: 60)
                         
                         Spacer()
                             .frame(height: 20)
@@ -55,7 +53,7 @@ struct Homeview: View {
                                 .foregroundColor(Color.theme.basicTextColor)
 
                             Text("\(viewModel.imageDescription)")
-                                .font(.system(size: 22, weight: .regular))
+                                .font(.system(size: 18, weight: .regular))
                                 .padding(.all)
                                 .frame(maxWidth: .infinity, alignment: .center)
                                 .foregroundColor(Color.theme.basicTextColor)
@@ -74,7 +72,7 @@ struct Homeview: View {
                                 .foregroundColor(Color.theme.basicTextColor)
 
                             Text("\(viewModel.arcDescriptions[2])")
-                                .font(.system(size: 22, weight: .regular))
+                                .font(.system(size: 18, weight: .regular))
                                 .padding(.all)
                                 .frame(maxWidth: .infinity, alignment: .center)
                                 .foregroundColor(Color.theme.basicTextColor)
