@@ -24,18 +24,21 @@ import FirebaseFirestoreSwift
     func isImageValid() {
         let timestamp1 = NSDate().timeIntervalSince1970
         self.isLoading = true
-        
+
         if(!images.isEmpty) {
-            DispatchQueue.main.async {
-                guard let ciImage = CIImage(image: self.images[0]) else { return }
+            let imageToProcess = images[0] // Capture the image outside the closure
+            DispatchQueue.global().async {  // Perform CPU-intensive work on background queue
+                guard let ciImage = CIImage(image: imageToProcess) else { return }
                 ArchitectureClassifierScript.detect(ciImage: ciImage, completion: { labelReceived in
-                    self.imageClass = labelReceived
-                    self.imageDescription = self.getClassDescription()
-                    self.imageIsValid = true
-                    withAnimation {
-                        self.isLoading = false
+                    DispatchQueue.main.async {  // Switch back to main queue to update UI
+                        self.imageClass = labelReceived
+                        self.imageDescription = self.getClassDescription()
+                        self.imageIsValid = true
+                        withAnimation {
+                            self.isLoading = false
+                        }
+                        self.uploadSessionLogToFirebase(begginingTimestamp: timestamp1)
                     }
-                    self.uploadSessionLogToFirebase(begginingTimestamp: timestamp1)
                 })
             }
         } else {
