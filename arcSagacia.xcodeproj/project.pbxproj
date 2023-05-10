@@ -10,6 +10,7 @@
 		B40C4BD72A0BCF680068E989 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B40C4BD62A0BCF680068E989 /* GoogleService-Info.plist */; };
 		B40C4BD92A0BCFA70068E989 /* abrilCFineTuning2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B40C4BD82A0BCFA70068E989 /* abrilCFineTuning2.mlmodel */; };
 		B40C4BDB2A0BCFFF0068E989 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C4BDA2A0BCFFF0068E989 /* Spinner.swift */; };
+		B40C4BDD2A0BD23D0068E989 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C4BDC2A0BD23D0068E989 /* UIScreen.swift */; };
 		B42596C22A03F70100BDCF1B /* SessionLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42596C12A03F70100BDCF1B /* SessionLog.swift */; };
 		B42F66EB29D2119800D39CA6 /* PickMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42F66EA29D2119800D39CA6 /* PickMediaView.swift */; };
 		B42F66ED29D2131000D39CA6 /* HomeModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42F66EC29D2131000D39CA6 /* HomeModelView.swift */; };
@@ -35,6 +36,7 @@
 		B40C4BD62A0BCF680068E989 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B40C4BD82A0BCFA70068E989 /* abrilCFineTuning2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = abrilCFineTuning2.mlmodel; sourceTree = "<group>"; };
 		B40C4BDA2A0BCFFF0068E989 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		B40C4BDC2A0BD23D0068E989 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		B42596C12A03F70100BDCF1B /* SessionLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLog.swift; sourceTree = "<group>"; };
 		B42F66EA29D2119800D39CA6 /* PickMediaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickMediaView.swift; sourceTree = "<group>"; };
 		B42F66EC29D2131000D39CA6 /* HomeModelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModelView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				B42F66F629D214E600D39CA6 /* Color.swift */,
+				B40C4BDC2A0BD23D0068E989 /* UIScreen.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				B4429EA129D20EBA00974612 /* Homeview.swift in Sources */,
 				B42F66ED29D2131000D39CA6 /* HomeModelView.swift in Sources */,
 				B40C4BD92A0BCFA70068E989 /* abrilCFineTuning2.mlmodel in Sources */,
+				B40C4BDD2A0BD23D0068E989 /* UIScreen.swift in Sources */,
 				B42F66F129D213CA00D39CA6 /* ImagePickerRepresentable.swift in Sources */,
 				B42F66EF29D213A500D39CA6 /* PhotoPickerRepresentable.swift in Sources */,
 				B42F66F729D214E600D39CA6 /* Color.swift in Sources */,

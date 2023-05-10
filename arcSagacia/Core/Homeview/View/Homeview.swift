@@ -44,7 +44,9 @@ struct Homeview: View {
                         ScrollView {
                             Image(uiImage: viewModel.images[0])
                                 .resizable()
-                                .frame(height: 300)
+                                .scaledToFill()
+                                .frame(width: UIScreen.screenWidth, height: UIScreen.screenWidth)
+                                .clipped()
 
                             Text("\(viewModel.imageClass)")
                                 .font(.system(size: 35, weight: .bold))
@@ -63,7 +65,9 @@ struct Homeview: View {
                         ScrollView {
                             Image("copan")
                                 .resizable()
-                                .frame(height: 300)
+                                .scaledToFill()
+                                .frame(width: UIScreen.screenWidth, height: UIScreen.screenWidth)
+                                .clipped()
 
                             Text("Modernista")
                                 .font(.system(size: 35, weight: .bold))
