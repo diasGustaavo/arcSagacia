@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/firebase-ios-sdk",
       "state" : {
-        "branch" : "master",
-        "revision" : "370dcd2f2664ffdaf760653d66a4bc4fb4950d47"
+        "revision" : "837d4af6ead57cec1fc38007892500d3139c7556",
+        "version" : "10.16.0"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleAppMeasurement.git",
       "state" : {
-        "revision" : "9209b95a2593985569918e5e5ee2bf4ef8ff3640",
-        "version" : "10.9.0"
+        "revision" : "56f681586ff006a7982b53dc94082eea31971acf",
+        "version" : "10.16.0"
       }
     },
     {
@@ -50,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/grpc-binary.git",
       "state" : {
-        "revision" : "2b7656d8ee892cd39db460b1a0d849de618405e6",
-        "version" : "1.50.1"
+        "revision" : "a673bc2937fbe886dd1f99c401b01b6d977a9c98",
+        "version" : "1.49.1"
       }
     },
     {
@@ -61,6 +61,15 @@
       "state" : {
         "revision" : "d415594121c9e8a4f9d79cecee0965cf35e74dbd",
         "version" : "3.1.1"
+      }
+    },
+    {
+      "identity" : "interop-ios-for-google-sdks",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google/interop-ios-for-google-sdks.git",
+      "state" : {
+        "revision" : "2d12673670417654f08f5f90fdd62926dc3a2648",
+        "version" : "100.0.0"
       }
     },
     {

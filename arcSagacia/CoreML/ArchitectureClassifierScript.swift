@@ -11,8 +11,8 @@ import CoreImage
 
 struct ArchitectureClassifierScript {
     static let configuration = MLModelConfiguration()
-    static let model = try! VNCoreMLModel(for: abrilCFineTuning2(configuration: configuration).model)
-    static let class_names = ["Barroco", "Indígena", "Modernista", "Neoclassica", "Neogotico"]
+    static let model = try! VNCoreMLModel(for: EfficientNetModel(configuration: configuration).model)
+    static let class_names = ["Barroco", "Ecletica", "Modernista", "Neoclassico", "Neogotico"]
     
     static func detect(ciImage: CIImage, completion: @escaping (String) -> Void) {
         let handler = VNImageRequestHandler(ciImage: ciImage)
